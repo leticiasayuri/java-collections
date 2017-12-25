@@ -18,5 +18,8 @@ public class TestandoListas {
 		//Removendo elementos de uma lista
 		cursos.remove(1);
 		System.out.println(cursos);
+		
+		//Acessando elementos da lista
+		System.out.println("O primeiro curso da lista é: " + cursos.get(0));
 	}
 }
