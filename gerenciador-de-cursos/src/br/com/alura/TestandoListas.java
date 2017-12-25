@@ -1,6 +1,7 @@
 package br.com.alura;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class TestandoListas {
 
@@ -15,11 +16,19 @@ public class TestandoListas {
 		cursos.add(curso3);
 		System.out.println(cursos);
 		
-		//Removendo elementos de uma lista
+		// Removendo elementos de uma lista
 		cursos.remove(1);
 		System.out.println(cursos);
 		
-		//Acessando elementos da lista
+		// Acessando elementos da lista
 		System.out.println("O primeiro curso da lista é: " + cursos.get(0));
+		
+		// Adicionando mais elementos à lista para ordená-la
+		cursos.add("Apache Camel");
+		cursos.add("Mock: Testes em Java");
+		
+		// Ordenando a lista
+		Collections.sort(cursos);
+		System.out.println(cursos);
 	}
 }
