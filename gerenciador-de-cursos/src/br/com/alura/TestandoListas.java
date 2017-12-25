@@ -13,7 +13,10 @@ public class TestandoListas {
 		cursos.add(curso1);
 		cursos.add(curso2);
 		cursos.add(curso3);
+		System.out.println(cursos);
 		
+		//Removendo elementos de uma lista
+		cursos.remove(1);
 		System.out.println(cursos);
 	}
 }
