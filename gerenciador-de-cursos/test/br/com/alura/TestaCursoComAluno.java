@@ -1,5 +1,9 @@
 package br.com.alura;
 
+import java.util.Iterator;
+import java.util.Set;
+import java.util.Vector;
+
 public class TestaCursoComAluno {
 
 	public static void main(String[] args) {
@@ -33,5 +37,15 @@ public class TestaCursoComAluno {
 		System.out.println(a1 == turini);
 		System.out.println("O a1 é equals ao Turini?");
 		System.out.println(a1.equals(turini));
+		
+		Set<Aluno> alunos = javaColecoes.getAlunos();
+		Iterator<Aluno> iterador = alunos.iterator();
+		while (iterador.hasNext()) {
+			Aluno proximo = iterador.next();
+			System.out.println(proximo);
+		}
+		
+		Vector<Aluno> vetor = new Vector<>();
+		
 	}
 }
